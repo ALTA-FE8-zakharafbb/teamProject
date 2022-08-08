@@ -147,6 +147,11 @@ h1{
 
 /* kontak start */
 
+.link{
+    position: relative;
+    top: 100px;
+}
+
 .phone{
     width: 20px;
     float: left;
@@ -172,5 +177,49 @@ h1{
 /* form */
 
 p{
-    float: right
+    position: relative;
+    float: right;
+    top: -300px;
+    left: -300px;
+    width: 584px;
+    height: 92px;
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #19345E;
+    opacity: 1;
+}
+
+.titik{
+    color: red;
+}
+
+.button {
+    background-color: #f47522;
+    border: none;
+    border-radius: 75px;
+  }
+  .button-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .button-link:hover {
+    color: #fff;
+    text-decoration: none;}
+
+
+    
+.footer {
+    background-color: #19345e;
+    color: white;
+    position: relative;
+    top: 50vh;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10px;
+
 }
