@@ -11,7 +11,7 @@ body{
 /* NAVBAR START */
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
 }
@@ -127,4 +127,50 @@ nav ul.slide{
     }
 }
 
+.contactus :hover{
+    color: white;
+    
+}
 /* NAVBAR END */
+
+/* getintouch */
+
+.setrip{
+    color: #F47522;
+}
+
+h1{
+    text-align: center;
+    color: #19345E;
+}
+/* getintouch end */
+
+/* kontak start */
+
+.phone{
+    width: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.envelope{
+    width: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.browser{
+    width: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.gambarlogo{
+    width: 30px;
+}
+
+/* form */
+
+p{
+    float: right
+}
