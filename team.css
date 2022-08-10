@@ -152,10 +152,10 @@ h3{
 .borderm{ 
     position: absolute !important;
     Border: 10px solid #F47522;
-width: 320px;
-height: 399px;
-top: 200px;
-right: 150px;
+    width: 320px;
+    height: 399px;
+    top: 230px;
+    margin-left: -48px;
 }
 
 .shutterstock{
@@ -164,12 +164,36 @@ right: 150px;
     height: 399px;
 }
 
-@media only screen and (max-width:425px){
+.group{
+    position: absolute;
+    width: 440px;
+height: 339px;
+top: 241px;
+right: 800px;
 
 }
-@media only screen and (max-width:2560px){
-    .borderm{
-        left: 571px;
-        top: 230px;
-    }
+
+/* media screen */
+@media screen and(max-width:2560){
+.borderm{
+    position: absolute !important;
+    Border: 10px solid #F47522;
+    width: 320px;
+    height: 399px;
+    top: 230px;
+    margin-left: -48px;
+    
+}
+    
+}
+
+@media screen and (max-width:425px){
+.borderm{position: absolute !important;
+    Border: 10px solid #F47522;
+width: 320px;
+height: 399px;
+top: 200px;
+right: 150px;
+
+}
 }
