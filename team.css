@@ -148,51 +148,16 @@ nav ul.slide{
 h3{
     text-align: left;
 }
-/* 
-.shutterstock{
-    position: absolute;
-    top: 390px;
-left: 160px;
-width: 320px;
-height: 399px;
-/* background:  url(AssetProject/shutterstock_796346011@2x.png) 0% 0% no-repeat padding-box;
-opacity: 1; */
-/* padding-inline: 0px;
- z-index: -1; */
-/* } */
 
-/* 
-.bordergmbr{
-    border: 10px solid #F47522;
-    top: 360px;
-left: 190px;
-width: 320px;
-height: 399px;
-opacity: 1;
-background: transparent url(AssetProject/shutterstock_796346011@2x.png) 0% 0% no-repeat padding-box;
-background-size: cover;
-    }  */
-
-.wrap{
-    box-sizing: border-box;
+.border{ 
     Border: 10px solid #F47522;
-    top: 360px;
-left: 190px;
 width: 320px;
 height: 399px;
 opacity: 1;
-
 }
 
 .shutterstock{
-    top: 390px;
-    left: 160px;
+    position: relative;
     width: 320px;
     height: 399px;
-background: transparent url(AssetProject/shutterstock_796346011@2x.png) 0% 0% no-repeat padding-box;
-background-size: cover;
 }
-    /* img{
-        width: 320px;
-height: 399px;
-    } */
