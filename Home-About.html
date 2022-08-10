@@ -9,13 +9,92 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <!-- Awal CSS -->
-    <style></style>
+    <style>
+        @media only screen and (max-width: 991px) {
+        .contact {
+          max-width: 100px;
+          margin-left: 0px !important;
+          border-radius: 0px;
+          background-color: white;
+          color: #19345e !important;
+          background-color: white !important;
+          border: 0px !important;
+          }
+        }
+
+      .contact {
+        background-color: white;
+        border-radius: 25px;
+        margin-left: 35px;
+        border: #f47522 solid;
+      }
+       
+      .garisoren {
+        font-size: 60px;
+        color: #f47522;
+      }
+      .about, .latest {
+        font-size: 45px;
+        color: #19345e;
+        margin-bottom: 40px;
+      }
+
+      .sosmed {
+        color: white;
+        font-size: 15px;
+        margin-left: 32px;
+      }
+
+      .listsosmed li {
+        list-style-type: none;
+        float: left;
+        display: flex;
+        padding-right: 14px;
+      }
+
+      .copyright {
+        color: white;
+      }
+      /* style expcom */
+      .expcom {
+        padding-top: 30px;
+      }
+
+      /* style ourteam */
+      .ourteam {
+        color: #19345e;
+        font-weight: bold;
+ 
+      }
+      .meet{
+        font-size: 45px;
+        color: #19345e;
+        padding-top: 15px;
+      }
+
+      .checknow {
+        color: #19345e;
+        font-weight: bold;
+      }
+
+      /* style border */
+      .borderm{ 
+        position: absolute !important;
+    Border: 10px solid #F47522;
+    width: 430px;
+    height: 502px;
+    top: 10px;
+    margin-left: -25px;
+}
+
+
+    </style>
     <!-- Akhir CSS -->
-    <title>Hello, world!</title>
+    <title>Alterra - Home</title>
   </head>
   <body>
     <!-- Awal Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="/day6tk/aset/logo-ALTA@2x.png" width="110px" height="60px" alt="logo-ALTA " /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,11 +102,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto" style="color: #19345e">
-            <a class="nav-link active blue" aria-current="page" href="#" style="color: #19345e; font-weight: bold">Home</a>
-            <a class="nav-link" href="#" style="color: #19345e; font-weight: bold">About</a>
-            <a class="nav-link" href="#team" style="color: #19345e; font-weight: bold">Team</a>
-            <a class="nav-link" href="#blogg" style="color: #19345e; font-weight: bold">Blog</a>
-            <a class="nav-link" href="#" style="color: #19345e; font-weight: bold">Contact</a>
+            <a class="nav-link active blue" aria-current="page" href="#" style="color: #f47522; font-weight: bold">Home</a>
+            <a class="nav-link" href="About.html" style="color: #19345e; font-weight: bold">About</a>
+            <a class="nav-link" href="Team.html" style="color: #19345e; font-weight: bold">Team</a>
+            <a class="nav-link" href="Blog.html" style="color: #19345e; font-weight: bold">Blog</a>
+            <a class="nav-link contact" href="#" style="color: #f47522; font-weight: bold">Contact</a>
           </div>
         </div>
       </div>
@@ -35,12 +114,12 @@
     <!-- Akhir Nabar -->
 
     <!-- Awal Section Home -->
-    <div id="home" class="container-fluid text-center" style="background-color: #edf6ff; padding-top: 161px; padding-bottom: 162px">
+    <div id="home" class="container text-center" style="background-color: #edf6ff; padding-top: 161px; padding-bottom: 162px">
       <div class="row justify-content-center">
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 mb-4 img-fluid">
           <img src="/day6tk/aset/Group 16136@2x@2x.png" class="img-fluid" width="420px" alt="hero" />
         </div>
-        <div class="col-lg-4 text-lg-start mt-5" style="color: #19345e">
+        <div class="col-lg-3 text-lg-start mt-5" style="color: #19345e">
           <h3>HI THERE!</h3>
           <h1>
             We are an
@@ -55,7 +134,7 @@
 
     <!-- Awal Section Exp,Completed, online -->
 
-    <div class="container-fluid">
+    <div class="container-fluid expcom">
       <div class="row align-items-start justify-content-center text-center rounded-pill">
         <div class="col-lg-3 mb-3"><img src="/day6tk/aset/reward.png" alt="" style="background-color: #f47522; padding: 5px; border-radius: 100%" /> 4 Years Job Experience</div>
         <div class="col-lg-3 mb-3"><img src="/day6tk/aset/project.png" alt="" style="background-color: #f47522; padding: 5px; border-radius: 100%" />500+ Projects Completed</div>
@@ -69,10 +148,10 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col text-center">- ABOUT -</div>
+          <div class="col-12 text-center about"><span class="garisoren">-</span> About <span class="garisoren">-</span></div>
         </div>
         <div class="row">
-          <div class="col text-center fs-5" style="background-image: url(/Tugaskelompok1/teamProject/AssetProject/bg-people@2x.png); background-size: 1233px 484px; background-repeat: no-repeat; justify-content: center">
+          <div class="col text-center fs-5" style="background-image:url(/Tugaskelompok1/teamProject/AssetProject/bg-people@2x.png); background-size: 1330px 484px; background-repeat: no-repeat; justify-content: center">
             <br />
             <br />
             <br />
@@ -97,24 +176,24 @@
     <!-- Awal Team -->
     <div id="team" class="container-fluid">
       <div class="row">
-        <div class="col-lg text-center">- Meet Our Team -</div>
+        <div class="col-12 text-center meet"><span class="garisoren">-</span> Meet Our Team <span class="garisoren">-</span></div>
       </div>
     </div>
     <div class="container text-center">
       <div class="row">
-        <div class="col-lg mb-4">Our Team Consists Only of the Best Talents</div>
+        <div class="col-lg mb-4 ourteam">Our Team Consists Only of the Best Talents</div>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="card" style="width: 225px height=265px">
-            <img src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top" alt="fototeam" />
+            <img src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top shutterstock" alt="fototeam" /> <div class="borderm"></div>
             <div class="card-body">
               <p class="card-text">
                 <p style="color:#f47522; font-weight:bold; text-align: center;" >Aulia Rahmani </p>
                 <p style="color: #19345e; font-weight:bold;text-align: center;">UX Designer </p>
-              </p>
+              
             </div>
           </div>
         </div>
@@ -125,7 +204,7 @@
               <p class="card-text text-center">
                 <p style="color:#f47522; font-weight:bold; text-align: center;" >Cindy Felita </p>
                 <p style="color: #19345e; font-weight:bold;text-align: center;">Backend Development </p>
-              </p>
+              
             </div>
           </div>
         </div>
@@ -135,9 +214,15 @@
             <div class="card-body">
               <p style="color:#f47522; font-weight:bold; text-align: center;" >Winda Pramesti </p>
                 <p style="color: #19345e; font-weight:bold;text-align: center;">Frontend Development </p>
-              </p>
+              
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-4 text-end checknow">Check Now -->
         </div>
       </div>
     </div>
@@ -147,12 +232,7 @@
      <section id="blogg">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg text-center">- Latest Blogs -</div>
-        </div>
-      </div>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-lg mb-4">Our Team Consists Only of the Best Talents</div>
+          <div class="col-12 text-center latest"><span class="garisoren">-</span> Latest Blogs <span class="garisoren">-</span></div>
         </div>
       </div>
       <div class="container">
@@ -264,23 +344,33 @@
 
     <!-- Akhir Latest Blog -->
 
-    <!-- Awal Footer -->
-
-    <div class="container-fluid" style="background-color: #19345e;">
-      <div class="row">
-        <div class="col">
-          <img src="/day6tk/aset/logo-ALTA-v2@2x.png" width="110px" height="60px" alt="">
+        <!-- Awal Footer -->
+        <div class="container" style="background-color: #19345e">
+          <div class="row">
+            <div class="col">
+              <img src="/day6tk/aset/logo-ALTA-v2@2x.png" width="110px" height="60px" alt="" />
+            </div>
+            <div class="col">
+              <div class="sosmed">Sosial Media</div>
+              <ul class="listsosmed">
+                <li>
+                  <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_fb.png" alt="" width="30px" /> </a>
+                </li>
+                <li>
+                  <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_twitter.png" width="30px" alt="" /> </a>
+                </li>
+                <li>
+                  <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_ig.png" width="30px" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_linkedin.png" width="30px" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col copyright text-center align-self-center">Copyright © 2019 Alterra</div>
+          </div>
         </div>
-        <div class="col">
-          Column
-        </div>
-        <div class="col">
-          Column
-        </div>
-      </div>
-    </div>
-
-    <!-- Akhir Footer -->
+        <!-- Akhir Footer -->
 
     <!--  Bootstrap with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
