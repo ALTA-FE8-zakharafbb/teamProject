@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- CSS -->
+    <style>
+      .garisoren {
+        font-size: 60px;
+        color: #f47522;
+      }
+      .about,
+      .latest {
+        font-size: 45px;
+        color: #19345e;
+        margin-bottom: 40px;
+      }
+
+      /* style footer */
+      .sosmed {
+        color: white;
+        font-size: 15px;
+        margin-left: 32px;
+      }
+
+      .listsosmed li {
+        list-style-type: none;
+        float: left;
+        display: flex;
+        padding-right: 14px;
+      }
+
+      .copyright {
+        color: white;
+      }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="/day6tk/aset/logo-ALTA@2x.png" width="110px" height="60px" alt="logo-ALTA " /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto" style="color: #19345e">
+            <a class="nav-link active blue" aria-current="page" href="#" style="color: #19345e; font-weight: bold">Home</a>
+            <a class="nav-link" href="About.html" style="color: #f47522; font-weight: bold">About</a>
+            <a class="nav-link" href="Team.html" style="color: #19345e; font-weight: bold">Team</a>
+            <a class="nav-link" href="Blog.html" style="color: #19345e; font-weight: bold">Blog</a>
+            <a class="nav-link contact" href="#" style="color: #19345e; font-weight: bold">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal carosel -->
+    <section class="carosel container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/Tugaskelompok1/teamProject/AssetProject/img_blog.jpg" class="d-block w-100" style="height: 400px" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Tugaskelompok1/teamProject/AssetProject/img_blog.jpg" class="d-block w-100" style="height: 400px" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Tugaskelompok1/teamProject/AssetProject/img_blog.jpg" class="d-block w-100" style="height: 400px" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Akhir Carosel -->
+
+    <!-- Awal About US -->
+    <!-- Awal About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center about"><span class="garisoren">-</span> About US <span class="garisoren">-</span></div>
+        </div>
+        <div class="row">
+          <div class="col text-center fs-5 gambarabout">
+            <div class="alterraa text-start">
+              <h1>Alterra is For Everyone</h1>
+              <p class="col justify-content-center text-start">
+                As a brandnew Catalyst, we are aiming to become one of the bes tech companies in Indonesia. Joining the tech industry in Indonesia since 2015 under the name of Sepulsa, we have evolved as a B2B tech company in 4 years
+                providing various services suc aas Bill Payment Aggregator, Distribution Network, Promotion, and tech Academy. <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero voluptatibus veritatis placeat possimus. Laudantium at nulla ipsum debitis sit sint laboriosam vel pariatur animi. Veniam officia molestiae, obcaecati
+                adipisci id unde distinctio. Vitae obcaecati illum enim impedit rem, ipsum consequuntur quaerat placeat inventore porro excepturi illo tenetur tempore consectetur minus aliquid nihil odio quidem nemo totam voluptas
+                exercitationem ipsam. Harum saepe aliquam vel voluptatum ab sequi quod laudantium nihil ipsum at magnam, ad officiis quia ratione dolore omnis dolorum blanditiis rerum? Dolorem libero et tempora debitis qui voluptas
+                laudantium similique error vero quasi temporibus modi iusto distinctio, eos perspiciatis?
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni accusantium voluptatibus sint cumque blanditiis quod distinctio nihil reprehenderit illum exercitationem nam aliquam nostrum illo voluptates, accusamus
+                maxime quasi! Aliquam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Awal Footer -->
+    <div class="container" style="background-color: #19345e">
+      <div class="row">
+        <div class="col">
+          <img src="/day6tk/aset/logo-ALTA-v2@2x.png" width="110px" height="60px" alt="" />
+        </div>
+        <div class="col d-none d-lg-block">
+          <div class="sosmed">Sosial Media</div>
+          <ul class="listsosmed">
+            <li>
+              <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_fb.png" alt="" width="30px" /> </a>
+            </li>
+            <li>
+              <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_twitter.png" width="30px" alt="" /> </a>
+            </li>
+            <li>
+              <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_ig.png" width="30px" alt="" /></a>
+            </li>
+            <li>
+              <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_linkedin.png" width="30px" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col copyright text-center align-self-center">Copyright © 2019 Alterra</div>
+      </div>
+    </div>
+    <!-- Akhir Footer -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
