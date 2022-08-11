@@ -9,8 +9,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <!-- Awal CSS -->
-    <style>
-        @media only screen and (max-width: 991px) {
+    <style> 
+    /* Responsive HP 425x528 */
+     @media only screen and (min-width:1px) and (max-width: 425px)  {
+        .meet { font-size: 32px !important;}
+        .about { font-size: 32px !important;}
+        .latest {font-size: 32px !important;}
+        .fototeam { width: 250px !important;}
+        .borderm {
+          position: absolute !important;
+          Border: 10px solid #F47522;
+          width: 256px !important;
+          height: 304px !important;
+          top: 2217px !important;
+          margin-left: 59px !important;}
+      }
+
+    /* Responsive Tablet 768x582*/
+        @media only screen and (min-width:426px) and (max-width: 991px) {
         .contact {
           max-width: 100px;
           margin-left: 0px !important;
@@ -20,7 +36,56 @@
           background-color: white !important;
           border: 0px !important;
           }
+        .fototeam {
+          width: 60% !important;
         }
+        .borderm {
+          position: absolute !important;
+          Border: 10px solid #F47522 !important;
+          width: 430px !important;
+          height: 501px !important;
+          top: 2117px !important;
+          margin-left: 119px !important;}
+
+          .fototeam .alasfoto .borderm {
+          max-width: 100px;
+          width: 50%;
+          }
+        }
+
+    /* Responsive Laptop 1024x582 */
+    /* FotoOurTeam */
+      @media only screen and ( min-width:992px ) and (max-width: 1024px) {
+          .borderm {
+            position: absolute !important;
+            Border: 10px solid #F47522 !important;
+            width: 243px !important;
+            height: 291px !important;
+            top: 1669px !important;
+            margin-left: 12px !important;
+            }
+            .fototeam .alasfoto .borderm {
+          max-width: 100px;
+          width: 50%;
+          }
+          }
+
+    /* Responsive Laptop 1440x582 */
+    /* FotoOurTeam */
+      @media only screen and (min-width: 1440px) {
+          .borderm {
+            position: absolute !important;
+            Border: 10px solid #F47522 !important;
+            width: 341px !important;
+            height: 401px !important;
+            top: 1621px !important;
+            margin-left: 24px !important;
+            }
+            .fototeam .alasfoto .borderm {
+          max-width: 100px;
+          width: 50%;
+          }
+          }
 
       .contact {
         background-color: white;
@@ -29,6 +94,7 @@
         border: #f47522 solid;
       }
        
+      
       .garisoren {
         font-size: 60px;
         color: #f47522;
@@ -77,15 +143,16 @@
         font-weight: bold;
       }
 
-      /* style border */
-      .borderm{ 
-        position: absolute !important;
-    Border: 10px solid #F47522;
-    width: 430px;
-    height: 502px;
-    top: 10px;
-    margin-left: -25px;
-}
+      /* style fototeam */
+      .fototeam {
+        width: 80%;
+      }
+      .alasfoto {
+        text-align: center;
+      }
+
+      
+
 
 
     </style>
@@ -151,14 +218,14 @@
           <div class="col-12 text-center about"><span class="garisoren">-</span> About <span class="garisoren">-</span></div>
         </div>
         <div class="row">
-          <div class="col text-center fs-5" style="background-image:url(/Tugaskelompok1/teamProject/AssetProject/bg-people@2x.png); background-size: 1330px 484px; background-repeat: no-repeat; justify-content: center">
+          <div class="col text-center fs-5 gambarabout" style="background-image:url(/Tugaskelompok1/teamProject/AssetProject/bg-people@2x.png); background-size: 1330px 484px; background-repeat: no-repeat; justify-content: center">
             <br />
             <br />
             <br />
             <br />
             <br />
-            <h1 class="text-light">Alterra is For Everyone</h1>
-            <p class="col justify-content-center text-light">
+            <h1 class="text-light" style="-webkit-text-stroke: 1.5px #19345e">Alterra is For Everyone</h1>
+            <p class="col justify-content-center text-light" >
               As a brandnew Catalyst, we are aiming to become one of the bes tech companies in Indonesia. Joining the tech industry in Indonesia since 2015 under the name of Sepulsa, we have evolved as a B2B tech company in 4 years
               providing various services suc aas Bill Payment Aggregator, Distribution Network, Promotion, and tech Academy.
             </p>
@@ -187,8 +254,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 mb-4">
-          <div class="card" style="width: 225px height=265px">
-            <img src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top shutterstock" alt="fototeam" /> <div class="borderm"></div>
+          <div class="alasfoto">
+            <img class="fototeam" src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top shutterstock" alt="fototeam" /> <div class="borderm"></div>
             <div class="card-body">
               <p class="card-text">
                 <p style="color:#f47522; font-weight:bold; text-align: center;" >Aulia Rahmani </p>
@@ -197,9 +264,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card" style="width: 225px height=265px">
-            <img src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top" alt="fototeam" />
+        <div class="col-lg-4 mb-4 d-none d-lg-block">
+          <div class="alasfoto">
+            <img class="fototeam" src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top" alt="fototeam" /><div class="borderm"></div>
             <div class="card-body">
               <p class="card-text text-center">
                 <p style="color:#f47522; font-weight:bold; text-align: center;" >Cindy Felita </p>
@@ -208,9 +275,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card" style="width: 225px height=265px">
-            <img src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top" alt="fototeam" />
+        <div class="col-lg-4 mb-4 d-none d-lg-block">
+          <div class="alasfoto">
+            <img class="fototeam" src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top" alt="fototeam" /><div class="borderm"></div>
             <div class="card-body">
               <p style="color:#f47522; font-weight:bold; text-align: center;" >Winda Pramesti </p>
                 <p style="color: #19345e; font-weight:bold;text-align: center;">Frontend Development </p>
@@ -350,7 +417,7 @@
             <div class="col">
               <img src="/day6tk/aset/logo-ALTA-v2@2x.png" width="110px" height="60px" alt="" />
             </div>
-            <div class="col">
+            <div class="col d-none d-lg-block">
               <div class="sosmed">Sosial Media</div>
               <ul class="listsosmed">
                 <li>
