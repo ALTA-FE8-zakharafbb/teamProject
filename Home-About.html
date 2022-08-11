@@ -1,11 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <p>tes</p>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Awal CSS -->
+    <style> 
+    /* Responsive HP 425x528 */
+     @media only screen and (min-width:1px) and (max-width: 425px)  {
+        .meet { font-size: 32px !important;}
+        .about { font-size: 32px !important;}
+        .latest {font-size: 32px !important;}
+        .fototeam { width: 250px !important;}
+        .borderm {
+          position: absolute !important;
+          Border: 10px solid #F47522;
+          width: 256px !important;
+          height: 304px !important;
+          top: 2217px !important;
+          margin-left: 59px !important;}
+      }
+
+    /* Responsive Tablet 768x582*/
+        @media only screen and (min-width:426px) and (max-width: 991px) {
+        .contact {
+          max-width: 100px;
+          margin-left: 0px !important;
+          border-radius: 0px;
+          background-color: white;
+          color: #19345e !important;
+          background-color: white !important;
+          border: 0px !important;
+          }
+        .fototeam {
+          width: 60% !important;
+        }
+        .borderm {
+          position: absolute !important;
+          Border: 10px solid #F47522 !important;
+          width: 430px !important;
+          height: 501px !important;
+          top: 2117px !important;
+          margin-left: 119px !important;}
+
+          .fototeam .alasfoto .borderm {
+          max-width: 100px;
+          width: 50%;
+          }
+        }
+
+    /* Responsive Laptop 1024x582 */
+    /* FotoOurTeam */
+      @media only screen and ( min-width:992px ) and (max-width: 1024px) {
+          .borderm {
+            position: absolute !important;
+            Border: 10px solid #F47522 !important;
+            width: 243px !important;
+            height: 291px !important;
+            top: 1669px !important;
+            margin-left: 12px !important;
+            }
+            .fototeam .alasfoto .borderm {
+          max-width: 100px;
+          width: 50%;
+          }
+          }
+
+    /* Responsive Laptop 1440x582 */
+    /* FotoOurTeam */
+      @media only screen and (min-width: 1440px) {
+          .borderm {
+            position: absolute !important;
+            Border: 10px solid #F47522 !important;
+            width: 341px !important;
+            height: 401px !important;
+            top: 1621px !important;
+            margin-left: 24px !important;
+            }
+            .fototeam .alasfoto .borderm {
+          max-width: 100px;
+          width: 50%;
+          }
+          }
+
+      .contact {
+        background-color: white;
+        border-radius: 25px;
+        margin-left: 35px;
+        border: #f47522 solid;
+      }
+       
+      
+      .garisoren {
+        font-size: 60px;
+        color: #f47522;
+      }
+      .about, .latest {
+        font-size: 45px;
+        color: #19345e;
+        margin-bottom: 40px;
+      }
+
+      .sosmed {
+        color: white;
+        font-size: 15px;
+        margin-left: 32px;
+      }
+
+      .listsosmed li {
+        list-style-type: none;
+        float: left;
+        display: flex;
+        padding-right: 14px;
+      }
+
+      .copyright {
+        color: white;
+      }
+      /* style expcom */
+      .expcom {
+        padding-top: 30px;
+      }
+
+      /* style ourteam */
+      .ourteam {
+        color: #19345e;
+        font-weight: bold;
+ 
+      }
+      .meet{
+        font-size: 45px;
+        color: #19345e;
+        padding-top: 15px;
+      }
+
+      .checknow {
+        color: #19345e;
+        font-weight: bold;
+      }
+
+      /* style fototeam */
+      .fototeam {
+        width: 80%;
+      }
+      .alasfoto {
+        text-align: center;
+      }
+
+      
+
+
+
+    </style>
+    <!-- Akhir CSS -->
+    <title>Alterra - Home</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Awal Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="/day6tk/aset/logo-ALTA@2x.png" width="110px" height="60px" alt="logo-ALTA " /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto" style="color: #19345e">
+            <a class="nav-link active blue" aria-current="page" href="#" style="color: #f47522; font-weight: bold">Home</a>
+            <a class="nav-link" href="About.html" style="color: #19345e; font-weight: bold">About</a>
+            <a class="nav-link" href="Team.html" style="color: #19345e; font-weight: bold">Team</a>
+            <a class="nav-link" href="Blog.html" style="color: #19345e; font-weight: bold">Blog</a>
+            <a class="nav-link contact" href="#" style="color: #f47522; font-weight: bold">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Nabar -->
+
+    <!-- Awal Section Home -->
+    <div id="home" class="container text-center" style="background-color: #edf6ff; padding-top: 161px; padding-bottom: 162px">
+      <div class="row justify-content-center">
+        <div class="col-lg-4 mb-4 img-fluid">
+          <img src="/day6tk/aset/Group 16136@2x@2x.png" class="img-fluid" width="420px" alt="hero" />
+        </div>
+        <div class="col-lg-3 text-lg-start mt-5" style="color: #19345e">
+          <h3>HI THERE!</h3>
+          <h1>
+            We are an
+            <h1 style="color: #f47522">Alterra Academy.</h1>
+          </h1>
+          <p class="fw-bold">Alterra Academy Full stack Program is Coding Bootcamp which transform you being profesional Software Engineer within 3 months.</p>
+          <button type="button" class="btn btn-warning"><img src="/day6tk/aset/sport-team.png" width="20px" alt="" />More About Team</button>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Section Home -->
+
+    <!-- Awal Section Exp,Completed, online -->
+
+    <div class="container-fluid expcom">
+      <div class="row align-items-start justify-content-center text-center rounded-pill">
+        <div class="col-lg-3 mb-3"><img src="/day6tk/aset/reward.png" alt="" style="background-color: #f47522; padding: 5px; border-radius: 100%" /> 4 Years Job Experience</div>
+        <div class="col-lg-3 mb-3"><img src="/day6tk/aset/project.png" alt="" style="background-color: #f47522; padding: 5px; border-radius: 100%" />500+ Projects Completed</div>
+        <div class="col-lg-3 mb-3"><img src="/day6tk/aset/support.png" alt="" style="background-color: #f47522; padding: 5px; border-radius: 100%" />Support Online 24/7</div>
+      </div>
+    </div>
+
+    <!-- Akhir Section 3col Exp,Completed, online -->
+
+    <!-- Awal About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center about"><span class="garisoren">-</span> About <span class="garisoren">-</span></div>
+        </div>
+        <div class="row">
+          <div class="col text-center fs-5 gambarabout" style="background-image:url(/Tugaskelompok1/teamProject/AssetProject/bg-people@2x.png); background-size: 1330px 484px; background-repeat: no-repeat; justify-content: center">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1 class="text-light" style="-webkit-text-stroke: 1.5px #19345e">Alterra is For Everyone</h1>
+            <p class="col justify-content-center text-light" >
+              As a brandnew Catalyst, we are aiming to become one of the bes tech companies in Indonesia. Joining the tech industry in Indonesia since 2015 under the name of Sepulsa, we have evolved as a B2B tech company in 4 years
+              providing various services suc aas Bill Payment Aggregator, Distribution Network, Promotion, and tech Academy.
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About -->
+    
+    <!-- Awal Team -->
+    <div id="team" class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center meet"><span class="garisoren">-</span> Meet Our Team <span class="garisoren">-</span></div>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg mb-4 ourteam">Our Team Consists Only of the Best Talents</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="alasfoto">
+            <img class="fototeam" src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top shutterstock" alt="fototeam" /> <div class="borderm"></div>
+            <div class="card-body">
+              <p class="card-text">
+                <p style="color:#f47522; font-weight:bold; text-align: center;" >Aulia Rahmani </p>
+                <p style="color: #19345e; font-weight:bold;text-align: center;">UX Designer </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 d-none d-lg-block">
+          <div class="alasfoto">
+            <img class="fototeam" src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top" alt="fototeam" /><div class="borderm"></div>
+            <div class="card-body">
+              <p class="card-text text-center">
+                <p style="color:#f47522; font-weight:bold; text-align: center;" >Cindy Felita </p>
+                <p style="color: #19345e; font-weight:bold;text-align: center;">Backend Development </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 d-none d-lg-block">
+          <div class="alasfoto">
+            <img class="fototeam" src="/day6tk/aset/shutterstock_796346011@2x.png" class="card-img-top" alt="fototeam" /><div class="borderm"></div>
+            <div class="card-body">
+              <p style="color:#f47522; font-weight:bold; text-align: center;" >Winda Pramesti </p>
+                <p style="color: #19345e; font-weight:bold;text-align: center;">Frontend Development </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-4 text-end checknow">Check Now -->
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Team -->
+
+     <!-- Awal Latest Blog -->
+     <section id="blogg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center latest"><span class="garisoren">-</span> Latest Blogs <span class="garisoren">-</span></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+              <img src="/day6tk/aset/img_article.jpg" class="card-img-top" alt="fototeam" />
+                <div class="container p-3">
+                  <div class="row">
+                    <div class="col fs-5 fw-bold p-0">
+                      CREATE A WORDPRESS THEME FROM SCRATCH
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid p-0" >
+                  <div class="row text-secondary">
+                    <div class="col">
+                    Larry Stark
+                    </div>
+                    <div class="col p-1">
+                      7 Januari 2020
+                    </div>
+                  </div>
+                </div>
+                <div class="container p-3">
+                  <div class="row">
+                    <div class="col  p-0">
+                      Quick six blind smart out burst. Perpectly on furniture dejection determine my depending an to.Add short water court fat...
+                    </div>
+                  </div>
+                </div>
+                <div class="container p-3">
+                  <div class="row">
+                    <div class="col  p-0">
+                      <a class="text-end" href="" style="color:#f47522;">Read More</a>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <img src="/day6tk/aset/img_article.jpg" class="card-img-top" alt="fototeam" />
+              <div class="container p-3">
+                <div class="row">
+                  <div class="col fs-5 fw-bold p-0">
+                    CREATE A WORDPRESS THEME FROM SCRATCH
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid p-0" >
+                <div class="row text-secondary">
+                  <div class="col">
+                  Larry Stark
+                  </div>
+                  <div class="col p-1">
+                    7 Januari 2020
+                  </div>
+                </div>
+              </div>
+              <div class="container p-3">
+                <div class="row">
+                  <div class="col  p-0">
+                    Quick six blind smart out burst. Perpectly on furniture dejection determine my depending an to.Add short water court fat...
+                  </div>
+                </div>
+              </div>
+              <div class="container p-3">
+                <div class="row">
+                  <div class="col  p-0">
+                    <a class="text-end" href="" style="color:#f47522;">Read More</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <img src="/day6tk/aset/img_article.jpg" class="card-img-top" alt="fototeam" />
+            <div class="container p-3">
+              <div class="row">
+                <div class="col fs-5 fw-bold p-0">
+                  CREATE A WORDPRESS THEME FROM SCRATCH
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid p-0" >
+              <div class="row text-secondary">
+                <div class="col">
+                Larry Stark
+                </div>
+                <div class="col p-1">
+                  7 Januari 2020
+                </div>
+              </div>
+            </div>
+            <div class="container p-3">
+              <div class="row">
+                <div class="col  p-0">
+                  Quick six blind smart out burst. Perpectly on furniture dejection determine my depending an to.Add short water court fat...
+                </div>
+              </div>
+            </div>
+            <div class="container p-3">
+              <div class="row">
+                <div class="col  p-0">
+                  <a class="text-end" href="" style="color:#f47522;">Read More</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Akhir Latest Blog -->
+
+        <!-- Awal Footer -->
+        <div class="container" style="background-color: #19345e">
+          <div class="row">
+            <div class="col">
+              <img src="/day6tk/aset/logo-ALTA-v2@2x.png" width="110px" height="60px" alt="" />
+            </div>
+            <div class="col d-none d-lg-block">
+              <div class="sosmed">Sosial Media</div>
+              <ul class="listsosmed">
+                <li>
+                  <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_fb.png" alt="" width="30px" /> </a>
+                </li>
+                <li>
+                  <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_twitter.png" width="30px" alt="" /> </a>
+                </li>
+                <li>
+                  <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_ig.png" width="30px" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""> <img src="/Tugaskelompok1/teamProject/AssetProject/ic_linkedin.png" width="30px" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col copyright text-center align-self-center">Copyright © 2019 Alterra</div>
+          </div>
+        </div>
+        <!-- Akhir Footer -->
+
+    <!--  Bootstrap with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
