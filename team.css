@@ -294,4 +294,16 @@ right: 150px;
     top: 3690px;
     margin-left: -48px;
 }
+
+
+.ule {
+    list-style: none ;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 4rem;
+}
+
 }
